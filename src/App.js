@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 import Home from "./pages/home/Home";
 import CartPage from "./pages/cart/CartPage";
@@ -30,17 +31,15 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-gray-100">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home active={active} />} />
-          <Route path="/cart" element={<CartPage />} />
-          <Route path="/admin" element={<SignIn />} />
-          <Route path="/home" element={<Dashboard active={active} />} />
-          <Route path="/orders" element={<Orders />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home active={active} />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/admin" element={<SignIn />} />
+        <Route path="/home" element={<Dashboard active={active} />} />
+        <Route path="/orders" element={<Orders />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

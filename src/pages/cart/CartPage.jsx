@@ -76,11 +76,11 @@ function CartPage() {
   const amountPayable = (total + percentage) * 100;
 
   const config = {
-    reference: `${formData.phone}-${title}-${new Date().getTime().toString()}`,
+    reference: `${formData.phone}-${new Date().getTime().toString()}`,
     email: `user${formData.phone}@email.com`,
     amount: parseInt(amountPayable),
-    // publicKey: "pk_test_58c6351421f9e2746c30799f4e28ab06d208cc30",
-    publicKey: "pk_live_4b6f0aff8e2146cd24ccbd2c4f86fdf9915202de",
+    publicKey: "pk_test_58c6351421f9e2746c30799f4e28ab06d208cc30",
+    // publicKey: "pk_live_4b6f0aff8e2146cd24ccbd2c4f86fdf9915202de",
     currency: "GHS",
   };
 
@@ -145,6 +145,7 @@ function CartPage() {
     };
 
     try {
+      console.log('<-------------------data-------------------->', sendData)
       const colRef = collection(db, "orders");
       await addDoc(colRef, sendData);
       initializePayment(onSuccess, onClose);
@@ -164,7 +165,7 @@ function CartPage() {
   return (
     <>
       <main className="banner pb-30">
-        <HomeNav />
+        {/* <HomeNav /> */}
         <div className="max-w-screen-xl py-20 mx-auto px-6">
           <div className="flex justify-between align-center">
             <Button color="amber" onClick={() => navigate("/")}>
@@ -385,11 +386,11 @@ function CartPage() {
                   </g>{" "}
                 </g>
               </svg>
-              <Typography className="text-center font-normal">
+              {/* <Typography className="text-center font-normal">
                 ${title}will be in touch with you shortly regarding your order.
                 In the meantime, feel free to explore the delicious options
                 available on our menu!
-              </Typography>
+              </Typography> */}
             </DialogBody>
             <DialogFooter>
               <Button onClick={handleNavigate}>Proceed</Button>

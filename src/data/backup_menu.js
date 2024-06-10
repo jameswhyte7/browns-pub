@@ -13,13 +13,6 @@ export const menuItems = [
     img: "https://firebasestorage.googleapis.com/v0/b/cafeknk-4aca7.appspot.com/o/efa2070b-452b-4d52-868a-49a2b440dc5b.JPG?alt=media&token=ea0fc938-9c78-4138-8f71-7fa601f9d971",
     category: "starters",
   },
-  // {
-  //   id: 3,
-  //   name: "KnK salt &Pepper Calamari(Fresh local squid rings, crispy with mayo dip garnished with parsley)",
-  //   price: 80,
-  //   img: "https://firebasestorage.googleapis.com/v0/b/cafeknk-4aca7.appspot.com/o/Gemini_Generated_Image_x0icikx0icikx0ic.jpeg?alt=media&token=ab8b4c1e-dd86-4e8c-b055-24cb568e56d1",
-  //   category: "starters",
-  // },
   {
     id: 4,
     name: "Prawn crackers( a deep fried snack made from starch and pawns)",

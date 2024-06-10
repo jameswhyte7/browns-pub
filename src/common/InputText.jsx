@@ -10,10 +10,15 @@ function InputText({
   updateFormValue,
   updateType,
   required = false,
+  min,
 }) {
   const [value, setValue] = useState(defaultValue);
 
   const updateInputValue = (val) => {
+    // Ensure the value is at least the minimum value if it's a number
+    if (type === "number" && min !== undefined) {
+      val = Math.max(min, parseInt(val, 10));
+    }
     setValue(val);
     updateFormValue({ updateType, value: val });
   };

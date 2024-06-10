@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer components {
   .menu_tab {
     @apply text-gray-800 cursor-pointer select-none;
   }
   .active_menu_tab {
-    @apply rounded-lg px-4 py-2 text-white select-none;
+    @apply px-4 py-2 text-white select-none;
   }
 }
 
@@ -16,10 +17,17 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.header-banner {
-  background-image: url("./assets/hero-bg.jpg");
-  height: 600px !important;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
 }
+
+.Navbar, .Navbar * {
+  border: none !important;
+  outline: none !important;
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+} */

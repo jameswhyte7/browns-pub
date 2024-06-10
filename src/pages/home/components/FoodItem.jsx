@@ -4,7 +4,6 @@ import {
   CardBody,
   CardFooter,
   CardHeader,
-  Chip,
   Dialog,
   DialogBody,
   DialogFooter,
@@ -19,6 +18,8 @@ import InputArea from "../../../common/InputArea";
 import useOrderProvider from "../../../context/orderProvider";
 import { FloatButton } from "antd";
 import { ShoppingCartOutlined } from "@ant-design/icons";
+import "../../../App.css";
+import './FoodItem.css'
 
 const ORDER_DATA = {
   title: "",
@@ -37,7 +38,10 @@ function FoodItem({ img, title, price, category, id, active }) {
   const navigate = useNavigate();
 
   const updateFormValue = ({ updateType, value }) => {
-    setFormData({ ...formData, [updateType]: value });
+    if (updateType === "qty") {
+      value = Math.max(0, value); // Ensure qty is non-negative
+    }
+    setFormData((prevData) => ({ ...prevData, [updateType]: value }));
   };
 
   const handleOpen = () => setOpen(!open);
@@ -60,43 +64,43 @@ function FoodItem({ img, title, price, category, id, active }) {
 
   return (
     <>
-      <Card className="max-w-[24rem] overflow-hidden transition transform duration-700">
-        <CardHeader
-          floated={false}
-          shadow={false}
-          color="transparent"
-          className="m-0 rounded-none"
-        >
-          <div className="image-container">
+      <Card
+        style={{ border: "#D0AE64 1px solid ", boxShadow: "2px 2px 30px rgba(0, 0, 0, 0.25)" }}
+        className="max-w-[18rem] overflow-hidden"
+      >
+        <CardHeader floated={false} shadow={false} className="m-0 rounded-none">
+          <div className="flex justify-center image-container">
             <img
               src={img}
               alt={title}
-              className="w-full h-[300px] transform transition duration-300"
+              className="w-full h-[140px]"
               style={{ objectFit: "cover" }}
             />
           </div>
-          <Chip value={category} className="absolute top-2 right-2" />
         </CardHeader>
-        <CardBody>
-          <div>
-            <Typography
-              variant="h4"
-              color="blue-gray"
-              style={{ fontSize: "clamp(1.2rem, 0.8rem, 0.5rem)" }}
-            >
-              {title}
-            </Typography>
-          </div>
-        </CardBody>
-        <CardFooter className="flex items-center justify-between">
-          <Typography variant="h4" color="amber">
-            GH¢{price}
+        <CardBody className="flex flex-col justify-between h-[60px]">
+          <Typography
+            variant="h2"
+            color="blue-gray"
+            style={{ fontSize: "clamp(0.8rem, 0.5rem, 0.25rem)" }}
+            className="text-center"
+          >
+            {title}
           </Typography>
-          <Button color="amber" onClick={handleOpen} disabled={!active}>
-            Buy Now
-          </Button>
+        </CardBody>
+        <CardFooter className="mt-auto">
+          <div className="w-full flex justify-between items-center h-4">
+            <Typography className="text-center h-3 w-10 text-lg"
+              variant="" color="black">
+              GH¢{price}
+            </Typography>
+            <button className="button" onClick={handleOpen}>
+              Order Now
+            </button>
+          </div>
         </CardFooter>
       </Card>
+
 
       <Dialog open={open} size="xs" handler={handleOpen}>
         <DialogHeader>Add To Cart</DialogHeader>
@@ -111,6 +115,7 @@ function FoodItem({ img, title, price, category, id, active }) {
               labelTitle="Quantity"
               updateFormValue={updateFormValue}
               required={true}
+              min={0} // Add the min prop here
             />
             <InputArea
               defaultValue={formData.notes}
@@ -122,11 +127,7 @@ function FoodItem({ img, title, price, category, id, active }) {
           </form>
         </DialogBody>
         <DialogFooter>
-          <Button
-            variant="gradient"
-            color="green"
-            onClick={() => handleNewOrder()}
-          >
+          <Button variant="gradient" color="green" onClick={handleNewOrder}>
             <span>Proceed</span>
           </Button>
         </DialogFooter>

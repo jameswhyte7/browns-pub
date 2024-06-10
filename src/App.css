@@ -1,7 +1,5 @@
-.bg-primary {
-  background: #ffc107;
+.Navbar, .Navbar * {
+  border: none !important;
+  outline: none !important;
 }
 
-.text-primary {
-  color: #ffc107;
-}

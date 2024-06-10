@@ -1,1 +1,1 @@
-export const SETTINGS_ID = "ITQb3UQZWPIXnMmf9Bwu";
+export const SETTINGS_ID = "m9gx5DciiTtMaGTTT7mB";
