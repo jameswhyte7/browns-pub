@@ -64,34 +64,20 @@ function FoodItem({ img, title, price, category, id, active }) {
 
   return (
     <>
-      <Card
-        style={{ border: "#D0AE64 1px solid ", boxShadow: "2px 2px 30px rgba(0, 0, 0, 0.25)" }}
-        className="max-w-[18rem] overflow-hidden"
-      >
+      <Card style={{ border: "1px solid #D0AE64", boxShadow: "2px 2px 30px rgba(0, 0, 0, 0.25)" }} className="max-w-[18rem] overflow-hidden">
         <CardHeader floated={false} shadow={false} className="m-0 rounded-none">
           <div className="flex justify-center image-container">
-            <img
-              src={img}
-              alt={title}
-              className="w-full h-[140px]"
-              style={{ objectFit: "cover" }}
-            />
+            <img src={img} alt={title} className="w-full h-[140px]" style={{ objectFit: "cover" }} />
           </div>
         </CardHeader>
         <CardBody className="flex flex-col justify-between h-[60px]">
-          <Typography
-            variant="h2"
-            color="blue-gray"
-            style={{ fontSize: "clamp(0.8rem, 0.5rem, 0.25rem)" }}
-            className="text-center"
-          >
+          <Typography variant="h2" color="blue-gray" style={{ fontSize: "clamp(0.8rem, 0.5rem, 0.25rem)" }} className="text-center">
             {title}
           </Typography>
         </CardBody>
         <CardFooter className="mt-auto">
           <div className="w-full flex justify-between items-center h-4">
-            <Typography className="text-center h-3 w-10 text-lg"
-              variant="" color="black">
+            <Typography className="text-center h-3 w-10 text-lg" variant="" color="black">
               GH¢{price}
             </Typography>
             <button className="button" onClick={handleOpen}>
@@ -100,7 +86,6 @@ function FoodItem({ img, title, price, category, id, active }) {
           </div>
         </CardFooter>
       </Card>
-
 
       <Dialog open={open} size="xs" handler={handleOpen}>
         <DialogHeader>Add To Cart</DialogHeader>
