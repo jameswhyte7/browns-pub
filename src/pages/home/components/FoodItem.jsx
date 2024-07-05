@@ -1,4 +1,5 @@
 import {
+  IconButton,
   Button,
   Card,
   CardBody,
@@ -19,7 +20,7 @@ import useOrderProvider from "../../../context/orderProvider";
 import { FloatButton } from "antd";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import "../../../App.css";
-import './FoodItem.css'
+import './Main.css'
 
 const ORDER_DATA = {
   title: "",
@@ -29,7 +30,7 @@ const ORDER_DATA = {
   id: "",
 };
 
-function FoodItem({ img, title, price, category, id, active }) {
+function FoodItem({ img, title, more, price, category, id, active }) {
   const [open, setOpen] = useState(false);
   const [formData, setFormData] = useState(ORDER_DATA);
 
@@ -64,26 +65,64 @@ function FoodItem({ img, title, price, category, id, active }) {
 
   return (
     <>
-      <Card style={{ border: "1px solid #D0AE64", boxShadow: "2px 2px 30px rgba(0, 0, 0, 0.25)" }} className="max-w-[18rem] overflow-hidden">
-        <CardHeader floated={false} shadow={false} className="m-0 rounded-none">
-          <div className="flex justify-center image-container">
-            <img src={img} alt={title} className="w-full h-[140px]" style={{ objectFit: "cover" }} />
-          </div>
+      <Card className="w-full max-w-[17rem] mx-auto shadow-lg">
+        <CardHeader floated={false} color="blue-gray">
+          <img
+            src={img}
+            alt={title}
+            style={{ objectFit: "cover" }}
+            className="w-full h-[140px]"
+          />
+          <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
+
+          <IconButton
+            size="sm"
+            color="red"
+            variant="text"
+            className="!absolute top-0 right-0 rounded-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="h-4 w-4"
+            >
+              <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+            </svg>
+          </IconButton>
         </CardHeader>
-        <CardBody className="flex flex-col justify-between h-[60px]">
-          <Typography variant="h2" color="blue-gray" style={{ fontSize: "clamp(0.8rem, 0.5rem, 0.25rem)" }} className="text-center">
-            {title}
-          </Typography>
-        </CardBody>
-        <CardFooter className="mt-auto">
-          <div className="w-full flex justify-between items-center h-4">
-            <Typography className="text-center h-3 w-10 text-lg" variant="" color="black">
+        <CardBody className="flex-grow pb-0">
+          <div className="mb-0 flex items-center justify-between">
+            <Typography variant="h5" color="blue-gray" className="font-smaller text-md">
+              {title}
+            </Typography>
+            <Typography
+              color="blue-gray"
+              className="flex items-center gap-0.5 font-normal text-md bg-[#f4f3ef] p-0.5 rounded-md "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="-mt-0.5 h-3 w-3 text-yellow-700"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                  clipRule="evenodd"
+                />
+              </svg>
               GH¢{price}
             </Typography>
-            <button className="button" onClick={handleOpen}>
-              Order Now
-            </button>
           </div>
+          <Typography color="gray" className="text-xs">
+            {more}
+          </Typography>
+        </CardBody>
+        <CardFooter className="pt-0">
+          <Button onClick={handleOpen} size="sm" fullWidth={true}>
+            Order Now
+          </Button>
         </CardFooter>
       </Card>
 
@@ -100,7 +139,7 @@ function FoodItem({ img, title, price, category, id, active }) {
               labelTitle="Quantity"
               updateFormValue={updateFormValue}
               required={true}
-              min={0} // Add the min prop here
+              min={0}
             />
             <InputArea
               defaultValue={formData.notes}

@@ -1,5 +1,5 @@
 import React from 'react'
-import './FoodItem.css'
+import './Main.css'
 
 const Banner = () => {
   return (

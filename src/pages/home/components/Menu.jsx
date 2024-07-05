@@ -4,7 +4,7 @@ import FoodItem from "./FoodItem";
 import useFetch from "../../../hooks/useFetch";
 import { Typography } from "@material-tailwind/react";
 import { menuItems } from "../../../data/menu";
-import "./FoodItem.css"
+import "./Main.css"
 
 function Menu({ active }) {
   const [menuTab, setMenuTab] = useState("all");
@@ -23,7 +23,7 @@ function Menu({ active }) {
     <section id="sectionmenu" className="my-8 max-w-screen-xl mx-auto px-4">
       <div className="text-center mb-6">
         <Typography variant="h4" color="white" style={{ fontSize: '2rem' }}>
-          EXPLORE OUR MENU
+          MENU
         </Typography>
       </div>
 
@@ -34,6 +34,7 @@ function Menu({ active }) {
               <FoodItem
                 key={item.id}
                 img={item.img}
+                more={item.more}
                 title={item.name}
                 price={item.price}
                 category={item.category}
@@ -44,6 +45,7 @@ function Menu({ active }) {
         )}
       </div>
     </section>
+
 
   );
 }

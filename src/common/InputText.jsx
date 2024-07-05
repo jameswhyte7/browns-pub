@@ -24,18 +24,17 @@ function InputText({
   };
 
   return (
-    <div className={`form-control w-full ${containerStyle}`}>
-      <Input
-        type={type || "text"}
-        label={labelTitle}
-        variant="outlined"
-        size="lg"
-        value={value}
-        placeholder={placeholder || ""}
-        onChange={(e) => updateInputValue(e.target.value)}
-        required={required}
-      />
-    </div>
+
+    <Input
+      type={type || "text"}
+      label={labelTitle}
+      variant="outline"
+      size="md"
+      value={value}
+      placeholder={placeholder || ""}
+      onChange={(e) => updateInputValue(e.target.value)}
+      required={required}
+    />
   );
 }
 

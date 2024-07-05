@@ -18,7 +18,7 @@ function InputArea({
   };
 
   return (
-    <div className={`form-control w-full ${containerStyle}`}>
+
       <Textarea
         label={labelTitle}
         variant="outlined"
@@ -28,7 +28,7 @@ function InputArea({
         onChange={(e) => updateInputValue(e.target.value)}
         required={required}
       />
-    </div>
+    
   );
 }
 

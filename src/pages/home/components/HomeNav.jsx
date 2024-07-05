@@ -8,6 +8,7 @@ import {
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/logo.png";
+import { BsCart3 } from "react-icons/bs";
 
 function HomeNav() {
   const [openNav, setOpenNav] = useState(false);
@@ -20,7 +21,7 @@ function HomeNav() {
         variant="h5"
         className="p-1 font-normal text-white"
       >
-        <Link to="/" className="flex items-center text-white" style={{textDecoration: 'none', fontSize: '1.1rem' }}>
+        <Link to="/" className="flex items-center text-white" style={{ textDecoration: 'none', fontSize: '1.1rem' }}>
           Home
         </Link>
       </Typography>
@@ -29,7 +30,26 @@ function HomeNav() {
         variant="h5"
         className="p-1 font-normal"
       >
-        <Link to="/cart" className="flex items-center text-white" style={{textDecoration: 'none', fontSize: '1.1rem' }}>
+        <a href="#sectionmenu" className="text-white"
+          style={{ textDecoration: 'none', fontSize: '1.1rem' }}>
+          Menu
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="h5"
+        className="p-1 font-normal"
+      >
+        <a href="#sectioncontact" className="flex items-center text-white" style={{ textDecoration: 'none', fontSize: '1.1rem' }}>
+          Contact Us
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="h5"
+        className="p-1 font-normal"
+      >
+        <Link to="/cart" className="flex items-center text-white" style={{ textDecoration: 'none', fontSize: '1.1rem' }}>
           Cart
         </Link>
       </Typography>
@@ -63,28 +83,31 @@ function HomeNav() {
   }, []);
 
   return (
-    <Navbar className="Navbar fixed top-0 left-0 z-20 w-full h-max max-w-full bg-black rounded-none px-4 py-1">
-      <div className="flex items-center justify-between">
+    <Navbar className="Navbar fixed top-0 left-0 z-20 w-full h-max max-w-full bg-[#0D0F14] bg-opacity-100 rounded-none px-4 py-1">
+      <div className="flex items-center justify-around">
         <Link to="/" className="flex items-center">
           <img src={logo} alt="logo" className="h-16" />
         </Link>
 
-        <div className="flex items-center gap-x-1">
-          <div className="flex align-center mr-4 hidden lg:block text-center text-white rounded-none">{navList}</div>
-          <Button className="rounded-none p-0 bg-transparent shadow-none flex items-center justify-center hidden lg:inline-block" style={{ padding: 0 }}>
+        <div className="flex align-center mr-4 hidden lg:block text-center text-white rounded-none">{navList}</div>
+
+        <div className="flex justify-center items-center gap-x-1">
+          <Button
+            className="rounded-none p-0 bg-transparent shadow-none flex items-center justify-center hidden lg:inline-block"
+            style={{ padding: 0 }}
+          >
             <a
               href="#sectionmenu"
-              className="flex items-center justify-center w-full h-full"
+              className="flex items-center justify-center w-full h-full text-white"
               style={{
                 padding: '16px 0px',
                 fontSize: '1.1rem',
                 fontWeight: '500',
                 textDecoration: 'none',
-                color: 'white',
                 textTransform: 'capitalize',
               }}
             >
-              Buy now
+              <BsCart3  size={26}/>
             </a>
           </Button>
         </div>
@@ -129,11 +152,11 @@ function HomeNav() {
       </div>
       <Collapse open={openNav}>
         {navList}
-        <div className="flex items-center gap-x-1">
-          <Button fullWidth variant="gradient" size="sm" color="amber" text="white" className="border-none">
-            <span>
-              <a href="#sectionmenu" className="text-decoration-none">Buy Now</a>
-            </span>
+        <div className="flex justify-center items-center gap-x-1">
+          <Button fullWidth variant="gradient" size="sm" className="border-none flex justify-center items-center">
+            <a href="#sectionmenu" className="text-white text-decoration-none flex justify-center items-center">
+              <BsCart3 />
+            </a>
           </Button>
         </div>
       </Collapse>

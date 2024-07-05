@@ -165,9 +165,9 @@ function CartPage() {
   return (
     <>
       <main className="banner pb-30">
-        {/* <HomeNav /> */}
+        <HomeNav/>
         <div className="max-w-screen-xl py-20 mx-auto px-6">
-          <div className="flex justify-between align-center">
+          <div className="flex justify-between align-center py-8">
             <Button color="amber" onClick={() => navigate("/")}>
               Go Back
             </Button>

@@ -3,7 +3,7 @@ import Banner from "./components/Banner";
 import Menu from "./components/Menu";
 import HomeNav from "./components/HomeNav";
 import Footer from "./Footer";
-import './components/FoodItem.css';
+import './components/Main.css';
 
 function Home({ active }) {
   return (
