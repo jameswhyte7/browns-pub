@@ -83,7 +83,7 @@ function HomeNav() {
   }, []);
 
   return (
-    <Navbar className="Navbar fixed top-0 left-0 z-20 w-full h-max max-w-full bg-[#0D0F14] bg-opacity-100 rounded-none px-4 py-1">
+    <Navbar className="Navbar fixed top-0 left-0 z-20 w-full h-max max-w-full bg-[#080a0e] bg-opacity-100 rounded-none px-4 py-1">
       <div className="flex items-center justify-around">
         <Link to="/" className="flex items-center">
           <img src={logo} alt="logo" className="h-16" />

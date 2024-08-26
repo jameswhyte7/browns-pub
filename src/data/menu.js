@@ -37,7 +37,7 @@ export const menuItems = [
     "more": "with Grilled Tilapia",
     "category": "Menu",
     "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/086f9295e4fb8360c93a01f7f94706b2.jpg?alt=media&token=92e7511d-9b48-4089-adb5-07db52a02e00",
-    "price": 85
+    "price": 100
   },
   {
     "id": 6,
@@ -52,7 +52,7 @@ export const menuItems = [
     "name": "Banku",
     "more": "with Ademe Soup – Fish, Wele & crab and Salted beef",
     "category": "Menu",
-    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/BROWNS-01.jpg?alt=media&token=11ab6440-f55d-4b2e-a0ac-fce0e8fd4778",
+    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/WhatsApp%20Image%202024-06-10%20at%2009.09.29_108d4058.jpg?alt=media&token=569de37b-5355-4d59-b987-2b5132389ad5",
     "price": 60
   },
   {
@@ -60,15 +60,15 @@ export const menuItems = [
     "name": "Ewokple",
     "more": "with Octopus Stew",
     "category": "Menu",
-    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/Gemini_Generated_Image_t7t2bt7t2bt7t2bt.jpg?alt=media&token=f7fe11a3-9e83-4250-b124-ff488a817be1",
-    "price": 65
+    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/WhatsApp%20Image%202024-07-30%20at%2017.51.11_f6473257.jpg?alt=media&token=38a9a015-aba2-4839-9cab-a4dec0583c48",
+    "price": 80
   },
   {
     "id": 9,
     "name": "Ewokple",
-    "more": "with Abobi Tardi",
+    "more": "with Abobi Tardi and pepper",
     "category": "Menu",
-    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/BROWNS-08.jpg?alt=media&token=ed8d0fc2-4d0b-4b97-bc2c-1117fb57080c",
+    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/WhatsApp%20Image%202024-07-30%20at%2011.53.07_59b4aec9.jpg?alt=media&token=df23cdca-f094-4075-bbf2-a78d145a4ccd",
     "price": 60
   },
   {
@@ -116,7 +116,7 @@ export const menuItems = [
     "name": "Fufu",
     "more": "with Palm nut Soup – Cow meat, Tuna & Intestine",
     "category": "Menu",
-    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/FjTPQFOXEAAMl3m.jpg?alt=media&token=0a4dffa3-3cc0-468b-a730-bf98d95ee387",
+    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/WhatsApp%20Image%202024-07-30%20at%2017.45.53_b0bf65e8.jpg?alt=media&token=3f3379c9-ea39-4cb3-b095-8af0bbd9b417",
     "price": 60
   },
   {
@@ -133,7 +133,7 @@ export const menuItems = [
     "more": "extra",
     "category": "Extra Upon request",
     "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/OIP%20(9).jpeg?alt=media&token=278c957e-3a36-472c-8675-1197154cf181",
-    "price": 4
+    "price": 5
   },
   {
     "id": 18,
@@ -149,14 +149,14 @@ export const menuItems = [
     "more": "extra",
     "category": "Extra Upon request",
     "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/maxresdefault.jpg?alt=media&token=fecebd3a-d8d7-40fc-85d7-a15c12a1ab93",
-    "price": 4
+    "price": 5
   },
   {
     "id": 20,
     "name": "Goat Meat",
     "more": "extra",
     "category": "Extra Upon request",
-    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/OIP%20(8).jpeg?alt=media&token=8c06aa86-bfe1-4c3f-8934-530352b95983",
+    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/WhatsApp%20Image%202024-07-30%20at%2011.40.06_47d540b0.jpg?alt=media&token=ce4ab099-cd17-46e0-a53e-0e2d18092952",
     "price": 25
   },
   {
@@ -164,7 +164,7 @@ export const menuItems = [
     "name": "Cow Meat",
     "more": "extra",
     "category": "Extra Upon request",
-    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/Gemini_Generated_Image_fgkp42fgkp42fgkp.jpg?alt=media&token=4e2eba05-51a4-491f-8103-83a87010918e",
+    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/WhatsApp%20Image%202024-07-30%20at%2011.40.06_47d540b0.jpg?alt=media&token=ce4ab099-cd17-46e0-a53e-0e2d18092952",
     "price": 15
   },
   {
@@ -172,7 +172,7 @@ export const menuItems = [
     "name": "Cow Leg",
     "more": "extra",
     "category": "Extra Upon request",
-    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/WhatsApp%20Image%202024-06-10%20at%2009.09.26_bf55e734.jpg?alt=media&token=8f18f333-cd89-4ea7-afd5-27a866e6dc51",
+    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/WhatsApp%20Image%202024-08-01%20at%2015.52.38_26b75b4b.jpg?alt=media&token=5655975c-fcac-41ae-94c8-b3d44dbcdbac",
     "price": 15
   },
   {
@@ -180,7 +180,7 @@ export const menuItems = [
     "name": "Intestine",
     "more": "extra",
     "category": "Extra Upon request",
-    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/Stir-fried-pork-intestine-with-turmeric-specialty-food-of-Quang-Ngai.jpg?alt=media&token=458dcb92-1088-4510-98a9-daf28653336a",
+    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/WhatsApp%20Image%202024-06-10%20at%2009.09.30_4507d08f.jpg?alt=media&token=e3d25272-a5bf-47aa-b26c-34363f4805b1",
     "price": 15
   },
   {
@@ -188,7 +188,7 @@ export const menuItems = [
     "name": "Tuna",
     "more": "extra",
     "category": "Extra Upon request",
-    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/100_8489.jpg?alt=media&token=072bc523-47d2-4fd9-90b7-88256cf7e516",
+    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/WhatsApp%20Image%202024-07-30%20at%2010.47.21_80d5066b.jpg?alt=media&token=d3c354df-ae96-428b-b20e-17f72fd2e27b",
     "price": 12
   },
   {
@@ -212,7 +212,7 @@ export const menuItems = [
     "name": "Fried Fish",
     "more": "extra",
     "category": "Extra Upon request",
-    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/Gemini_Generated_Image_rl1ayfrl1ayfrl1a.jpg?alt=media&token=f07e5ca1-bea0-4449-8527-f284bd939551",
+    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/WhatsApp%20Image%202024-07-30%20at%2010.47.27_0d5ebc25.jpg?alt=media&token=321547e3-d6b0-4497-a7c5-8c7519c3918b",
     "price": 18
   },
   {
@@ -228,7 +228,7 @@ export const menuItems = [
     "name": "Dried Fish",
     "more": "extra",
     "category": "Extra Upon request",
-    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/Gemini_Generated_Image_r6yr4yr6yr4yr6yr.jpg?alt=media&token=3e0fb9db-7a87-42ab-898d-4dd18a8b1c5d",
+    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/WhatsApp%20Image%202024-07-30%20at%2010.47.18_883792e0.jpg?alt=media&token=be2c9d02-e86e-47e6-a516-22e10c7e116c",
     "price": 35
   },
   {
@@ -240,19 +240,19 @@ export const menuItems = [
     "price": 13
   },
   {
-    "id": 24,
-    "name": "Kebbab",
-    "more": "Pork Khebab – (2 Sticks)",
+    "id": 31,
+    "name": "Salmon",
+    "more": "extra",
     "category": "Extra Upon request",
-    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/chickentikka.jpg?alt=media&token=7941eca8-201c-4f15-bad5-d6257de4860b",
-    "price": 35
+    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/WhatsApp%20Image%202024-07-30%20at%2011.40.06_a96536de.jpg?alt=media&token=9a912841-9526-4ac1-b572-ca3ffd42c72f",
+    "price": 15
   },
   {
     "id": 32,
     "name": "Kebbab",
     "more": "Octopus Khebab – Available from 4pm to 8pm",
     "category": "Extra Upon request",
-    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/Gemini_Generated_Image_4wtikh4wtikh4wti.jpg?alt=media&token=9de970a7-3ea9-4ebb-bd7a-9910438ac7d7",
-    "price": 10
+    "img": "https://firebasestorage.googleapis.com/v0/b/browns-kitchen-6e202.appspot.com/o/WhatsApp%20Image%202024-07-30%20at%2011.40.07_b6de9238.jpg?alt=media&token=7bb42c53-dd61-4c91-a156-c71bfa91c34e",
+    "price": 25
   }
 ]

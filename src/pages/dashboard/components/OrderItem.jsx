@@ -10,7 +10,15 @@ import { doc, updateDoc } from "firebase/firestore";
 import React from "react";
 import { db } from "../../../config/firebase";
 
-function OrderItem({ name, phone, location, items, id }) {
+function OrderItem({
+  name,
+  phone,
+  location,
+  items,
+  id,
+  orderNumber,
+  showOrder = false,
+}) {
   const handleAction = async (id, value) => {
     try {
       const itemRef = doc(db, "orders", id);
@@ -23,6 +31,14 @@ function OrderItem({ name, phone, location, items, id }) {
   return (
     <Card className="mt-6 w-96">
       <CardBody>
+        {showOrder && (
+          <div className="mb-2">
+            <Typography color="black">Order #</Typography>
+            <Typography color="black" variant="h5">
+              {orderNumber}
+            </Typography>
+          </div>
+        )}
         <div className="mb-2">
           <Typography color="black">Name</Typography>
           <Typography color="black" variant="h5">

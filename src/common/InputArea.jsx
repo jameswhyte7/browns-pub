@@ -18,17 +18,16 @@ function InputArea({
   };
 
   return (
-
-      <Textarea
-        label={labelTitle}
-        variant="outlined"
-        size="md"
-        value={value}
-        placeholder={placeholder || ""}
-        onChange={(e) => updateInputValue(e.target.value)}
-        required={required}
-      />
-    
+    <Textarea
+      className={`form-control w-full ${containerStyle}`}
+      label={labelTitle}
+      variant="outlined"
+      size="md"
+      value={value}
+      placeholder={placeholder || ""}
+      onChange={(e) => updateInputValue(e.target.value)}
+      required={required}
+    />
   );
 }
 

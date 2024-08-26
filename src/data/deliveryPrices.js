@@ -7,32 +7,32 @@ export const DeliveryPrices = [
   {
     "value": "PALACE MALL (SPINTEX)",
     "label": "PALACE MALL (SPINTEX)",
-    "price": 25
+    "price": 35
   },
   {
     "value": "ACCRA MALL",
     "label": "ACCRA MALL",
-    "price": 27
+    "price": 45
   },
   {
     "value": "ACCRA METROPOLITAN",
     "label": "ACCRA METROPOLITAN",
-    "price": 43
+    "price": 50
   },
   {
     "value": "ACTION CHAPEL",
     "label": "ACTION CHAPEL",
-    "price": 25
+    "price": 30
   },
   {
     "value": "ACHIMOTA",
     "label": "ACHIMOTA",
-    "price": 50
+    "price": 55
   },
   {
     "value": "ADABRAKA",
     "label": "ADABRAKA",
-    "price": 46
+    "price": 55
   },
   {
     "value": "ADENTA",
@@ -42,52 +42,52 @@ export const DeliveryPrices = [
   {
     "value": "ADENTA FRAFRAHA",
     "label": "ADENTA FRAFRAHA",
-    "price": 55
+    "price": 60
   },
   {
     "value": "ABLEKUMA",
     "label": "ABLEKUMA",
-    "price": 65
+    "price": 70
   },
   {
     "value": "ABELEMKPE",
     "label": "ABELEMKPE",
-    "price": 48
+    "price": 50
   },
   {
     "value": "ABOFU",
     "label": "ABOFU",
-    "price": 40
+    "price": 45
   },
   {
     "value": "ABOSSO OKAI",
     "label": "ABOSSO OKAI",
-    "price": 50
+    "price": 60
   },
   {
     "value": "ACCRA NEW TOWN",
     "label": "ACCRA NEW TOWN",
-    "price": 45
+    "price": 50
   },
   {
     "value": "AGBOGBLOSHIE",
     "label": "AGBOGBLOSHIE",
-    "price": 45
+    "price": 60
   },
   {
     "value": "OGBODJO",
     "label": "OGBODJO",
-    "price": 36
+    "price": 40
   },
   {
     "value": "AIRPORT RESIDENTIAL",
     "label": "AIRPORT RESIDENTIAL",
-    "price": 31
+    "price": 40
   },
   {
     "value": "AKWETEMAN",
     "label": "AKWETEMAN",
-    "price": 42
+    "price": 50
   },
   {
     "value": "ALAJO",
@@ -102,22 +102,22 @@ export const DeliveryPrices = [
   {
     "value": "AGBOGBA",
     "label": "AGBOGBA",
-    "price": 45
+    "price": 55
   },
   {
     "value": "ABOKOBI",
     "label": "ABOKOBI",
-    "price": 60
+    "price": 70
   },
   {
     "value": "AMASAMAN",
     "label": "AMASAMAN",
-    "price": 70
+    "price": 100
   },
   {
     "value": "APENKWA",
     "label": "APENKWA",
-    "price": 45
+    "price": 50
   },
   {
     "value": "ANYAA",
@@ -127,22 +127,22 @@ export const DeliveryPrices = [
   {
     "value": "ASHAIMAN",
     "label": "ASHAIMAN",
-    "price": 40
+    "price": 45
   },
   {
     "value": "ASHALEY BOTWE",
     "label": "ASHALEY BOTWE",
-    "price": 45
+    "price": 50
   },
   {
     "value": "ASHONMAN ESTATE",
     "label": "ASHONMAN ESTATE",
-    "price": 60
+    "price": 70
   },
   {
     "value": "ASYLUM DOWN",
     "label": "ASYLUM DOWN",
-    "price": 45
+    "price": 50
   },
   {
     "value": "AVENOR AREA",
@@ -152,7 +152,7 @@ export const DeliveryPrices = [
   {
     "value": "AWOSHIE",
     "label": "AWOSHIE",
-    "price": 55
+    "price": 60
   },
   {
     "value": "AWUDOME",
@@ -167,7 +167,7 @@ export const DeliveryPrices = [
   {
     "value": "BANANA INN",
     "label": "BANANA INN",
-    "price": 55
+    "price": 60
   },
   {
     "value": "BUBUASHIE",
@@ -177,7 +177,7 @@ export const DeliveryPrices = [
   {
     "value": "BURMA CAMP",
     "label": "BURMA CAMP",
-    "price": 40
+    "price": 50
   },
   {
     "value": "COASTAL JUNCTION",
@@ -187,22 +187,22 @@ export const DeliveryPrices = [
   {
     "value": "CENTRAL BUSINESS DISTRICT",
     "label": "CENTRAL BUSINESS DISTRICT",
-    "price": 45
+    "price": 50
   },
   {
     "value": "CHORKOR",
     "label": "CHORKOR",
-    "price": 50
+    "price": 60
   },
   {
     "value": "CIRCLE",
     "label": "CIRCLE",
-    "price": 45
+    "price": 50
   },
   {
-    "value": "MCCARTHY HILL",
-    "label": "MCCARTHY HILL",
-    "price": 60
+    "value": "McCarthy Hill",
+    "label": "McCarthy Hill",
+    "price": 65
   },
   {
     "value": "DANSOMAN",
@@ -222,7 +222,7 @@ export const DeliveryPrices = [
   {
     "value": "DZORWULO",
     "label": "DZORWULO",
-    "price": 40
+    "price": 45
   },
   {
     "value": "DODOWA",
@@ -232,27 +232,27 @@ export const DeliveryPrices = [
   {
     "value": "EAST LEGON",
     "label": "EAST LEGON",
-    "price": 30
+    "price": 40
   },
   {
     "value": "EAST LEGON HILLS",
     "label": "EAST LEGON HILLS",
-    "price": 50
+    "price": 60
   },
   {
     "value": "TEMA",
     "label": "TEMA",
-    "price": 30
+    "price": 45
   },
   {
     "value": "TEMA COMM 25",
     "label": "TEMA COMM 25",
-    "price": 45
+    "price": 55
   },
   {
     "value": "DAWHENYA",
     "label": "DAWHENYA",
-    "price": 58
+    "price": 70
   },
   {
     "value": "KPONE",
@@ -262,7 +262,7 @@ export const DeliveryPrices = [
   {
     "value": "PRAMPRAM",
     "label": "PRAMPRAM",
-    "price": 75
+    "price": 90
   },
   {
     "value": "UNIVERSITY OF GHANA",
@@ -277,12 +277,12 @@ export const DeliveryPrices = [
   {
     "value": "MICHELE CAMP",
     "label": "MICHELE CAMP",
-    "price": 50
+    "price": 60
   },
   {
     "value": "AFIENYA",
     "label": "AFIENYA",
-    "price": 65
+    "price": 70
   },
   {
     "value": "MANET",
@@ -297,7 +297,7 @@ export const DeliveryPrices = [
   {
     "value": "LASHIBI",
     "label": "LASHIBI",
-    "price": 10
+    "price": 15
   },
   {
     "value": "KLAGON",
@@ -327,42 +327,42 @@ export const DeliveryPrices = [
   {
     "value": "TESHIE",
     "label": "TESHIE",
-    "price": 20
+    "price": 35
   },
   {
     "value": "NUNGUA",
     "label": "NUNGUA",
-    "price": 20
+    "price": 25
   },
   {
     "value": "TSE ADDO",
     "label": "TSE ADDO",
-    "price": 40
+    "price": 45
   },
   {
     "value": "LA",
     "label": "LA",
-    "price": 40
+    "price": 45
   },
   {
     "value": "LABADI",
     "label": "LABADI",
-    "price": 40
+    "price": 50
   },
   {
     "value": "LABONE",
     "label": "LABONE",
-    "price": 40
+    "price": 55
   },
   {
     "value": "BORTEYMAN",
     "label": "BORTEYMAN",
-    "price": 50
+    "price": 40
   },
   {
     "value": "NIMA",
     "label": "NIMA",
-    "price": 45
+    "price": 50
   },
   {
     "value": "KANDA",
@@ -387,22 +387,22 @@ export const DeliveryPrices = [
   {
     "value": "NORTH KANESHIE",
     "label": "NORTH KANESHIE",
-    "price": 55
+    "price": 60
   },
   {
     "value": "OKAISHIE",
     "label": "OKAISHIE",
-    "price": 45
+    "price": 60
   },
   {
     "value": "OSU",
     "label": "OSU",
-    "price": 40
+    "price": 45
   },
   {
     "value": "OYIBI",
     "label": "OYIBI",
-    "price": 70
+    "price": 80
   },
   {
     "value": "OYARIFA",
@@ -412,7 +412,7 @@ export const DeliveryPrices = [
   {
     "value": "PANTANG",
     "label": "PANTANG",
-    "price": 60
+    "price": 65
   },
   {
     "value": "PIG FARM",
@@ -457,12 +457,12 @@ export const DeliveryPrices = [
   {
     "value": "SUKURA",
     "label": "SUKURA",
-    "price": 55
+    "price": 60
   },
   {
     "value": "TUDU",
     "label": "TUDU",
-    "price": 45
+    "price": 65
   },
   {
     "value": "WEIJA",
@@ -477,7 +477,7 @@ export const DeliveryPrices = [
   {
     "value": "LASHIBI",
     "label": "LASHIBI",
-    "price": 1
+    "price": 15
   },
   {
     "value": "TABORA",
@@ -492,12 +492,12 @@ export const DeliveryPrices = [
   {
     "value": "UPSA",
     "label": "UPSA",
-    "price": 40
+    "price": 45
   },
   {
     "value": "SOUTH LA",
     "label": "SOUTH LA",
-    "price": 35
+    "price": 45
   },
   {
     "value": "SOWUTUOM",
@@ -512,17 +512,17 @@ export const DeliveryPrices = [
   {
     "value": "OFANKOR",
     "label": "OFANKOR",
-    "price": 65
+    "price": 70
   },
   {
     "value": "HAATSO",
     "label": "HAATSO",
-    "price": 45
+    "price": 50
   },
   {
     "value": "MADINA",
     "label": "MADINA",
-    "price": 40
+    "price": 45
   },
   {
     "value": "KORLE-BU",
@@ -532,7 +532,7 @@ export const DeliveryPrices = [
   {
     "value": "KORLE GONNO",
     "label": "KORLE GONNO",
-    "price": 50
+    "price": 55
   },
   {
     "value": "MAMOBI",
@@ -542,12 +542,12 @@ export const DeliveryPrices = [
   {
     "value": "MAMPROBI",
     "label": "MAMPROBI",
-    "price": 50
+    "price": 60
   },
   {
     "value": "NEW MAMPROBI",
     "label": "NEW MAMPROBI",
-    "price": 55
+    "price": 65
   },
   {
     "value": "NORTH INDUSTRIAL AREA",
@@ -557,7 +557,7 @@ export const DeliveryPrices = [
   {
     "value": "OLD ASHONMANG",
     "label": "OLD ASHONMANG",
-    "price": 55
+    "price": 70
   },
   {
     "value": "NII BOI TOWN",
@@ -567,7 +567,7 @@ export const DeliveryPrices = [
   {
     "value": "LARTERBIOKORSHIE",
     "label": "LARTERBIOKORSHIE",
-    "price": 55
+    "price": 60
   },
   {
     "value": "LEDZOKUKU-KROWOR",
@@ -582,22 +582,22 @@ export const DeliveryPrices = [
   {
     "value": "ADJEI KOJO",
     "label": "ADJEI KOJO",
-    "price": 30
+    "price": 40
   },
   {
     "value": "GOLF CITY",
     "label": "GOLF CITY",
-    "price": 40
+    "price": 50
   },
   {
     "value": "AFARIWA",
     "label": "AFARIWA",
-    "price": 45
+    "price": 60
   },
   {
     "value": "SAKUMONO",
     "label": "SAKUMONO",
-    "price": 12
+    "price": 15
   },
   {
     "value": "BASKET JUNCTION",
@@ -607,26 +607,26 @@ export const DeliveryPrices = [
   {
     "value": "KFC",
     "label": "KFC",
-    "price": 10
+    "price": 18
   },
   {
     "value": "SAKUMONO",
     "label": "SAKUMONO",
-    "price": 10
+    "price": 15
   },
   {
     "value": "ADE GONNO",
     "label": "ADE GONNO",
-    "price": 15
+    "price": 20
   },
   {
     "value": "DEVTRACCO",
     "label": "DEVTRACCO",
-    "price": 20
+    "price": 25
   },
   {
     "value": "COMM 19",
     "label": "COMM 19",
-    "price": 15
+    "price": 23
   }
 ];

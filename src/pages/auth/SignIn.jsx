@@ -42,7 +42,7 @@ function SignIn() {
         <div className="py-24 px-10">
           <form onSubmit={(e) => handleSubmit(e)}>
             <Typography color="black" variant="h3" className="text-center">
-              Title Here
+              Browns Pub and Restaurant
             </Typography>
 
             <div className="mb-16 mt-12">

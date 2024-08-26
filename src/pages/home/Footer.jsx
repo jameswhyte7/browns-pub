@@ -5,7 +5,7 @@ import { Typography } from "@material-tailwind/react";
 
 function Footer() {
   return (
-    <footer id="sectioncontact" style={{background: "#0D0F14"}}>
+    <footer id="sectioncontact" className="bg-[#080a0e]">
       <div className="container px-4 sm:px-6 py-8 mx-auto overflow-hidden">
         <div className="flex flex-col items-center text-center">
           <img className="w-auto h-20" src={logo} alt="logo" />

@@ -76,11 +76,14 @@ function CartPage() {
   const amountPayable = (total + percentage) * 100;
 
   const config = {
-    reference: `${formData.phone}-${new Date().getTime().toString()}`,
+    reference: `${formData.phone}-browns-${new Date().getTime().toString()}`,
     email: `user${formData.phone}@email.com`,
     amount: parseInt(amountPayable),
-    publicKey: "pk_test_58c6351421f9e2746c30799f4e28ab06d208cc30",
-    // publicKey: "pk_live_4b6f0aff8e2146cd24ccbd2c4f86fdf9915202de",
+    //Test paystack
+    // publicKey: "pk_test_58c6351421f9e2746c30799f4e28ab06d208cc30",
+
+    //Live paystack
+    publicKey: "pk_live_4b6f0aff8e2146cd24ccbd2c4f86fdf9915202de",
     currency: "GHS",
   };
 
@@ -119,13 +122,13 @@ function CartPage() {
 
   const handleSubmit = async () => {
     if (formData.name === "") {
-      message.error("Plase provide your name");
+      message.error("Please provide your name");
       return;
     } else if (formData.phone === "") {
-      message.error("Plase provide a phone number");
+      message.error("Please provide a phone number");
       return;
     } else if (isDispatch && delivery.price === 0) {
-      message.error("Plase select your nearest location");
+      message.error("Please select your nearest location");
       return;
     }
 
@@ -145,7 +148,7 @@ function CartPage() {
     };
 
     try {
-      console.log('<-------------------data-------------------->', sendData)
+      console.log("<-------------------data-------------------->", sendData);
       const colRef = collection(db, "orders");
       await addDoc(colRef, sendData);
       initializePayment(onSuccess, onClose);
@@ -165,7 +168,7 @@ function CartPage() {
   return (
     <>
       <main className="banner pb-30">
-        <HomeNav/>
+        <HomeNav />
         <div className="max-w-screen-xl py-20 mx-auto px-6">
           <div className="flex justify-between align-center py-8">
             <Button color="amber" onClick={() => navigate("/")}>

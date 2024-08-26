@@ -20,7 +20,7 @@ function Menu({ active }) {
   // };
 
   return (
-    <section id="sectionmenu" className="my-8 max-w-screen-xl mx-auto px-4">
+    <section id="sectionmenu" className="my-8 max-w-screen-xl mx-auto px-8">
       <div className="text-center mb-6">
         <Typography variant="h4" color="white" style={{ fontSize: '2rem' }}>
           MENU

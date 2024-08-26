@@ -113,6 +113,26 @@ function Dashboard({ active }) {
           console.error("Error playing sound:", error);
         }
       }
+    } else if (
+      pendingOrder.length === 1 &&
+      (prevData.length > 0 || prevData.length === 0)
+    ) {
+      try {
+        const simulateClick = () => {
+          const event = new MouseEvent("click");
+          document.body.dispatchEvent(event);
+        };
+        simulateClick();
+
+        document.body.addEventListener("click", playPauseSound());
+        setPrevData(pendingOrder);
+
+        return () => {
+          document.body.removeEventListener("click", playPauseSound());
+        };
+      } catch (error) {
+        console.error("Error playing sound:", error);
+      }
     } else {
       console.log("No show");
     }
@@ -167,8 +187,13 @@ function Dashboard({ active }) {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {pendingOrder.length > 0 ? (
-            pendingOrder.map((pending) => (
-              <OrderItem key={pending.id} {...pending} />
+            pendingOrder.map((pending, index) => (
+              <OrderItem
+                key={pending.id}
+                {...pending}
+                showOrder={true}
+                orderNumber={index + 1}
+              />
             ))
           ) : (
             <div className="text-center">

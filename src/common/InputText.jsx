@@ -24,8 +24,8 @@ function InputText({
   };
 
   return (
-
     <Input
+      className={`form-control w-full ${containerStyle}`}
       type={type || "text"}
       label={labelTitle}
       variant="outline"
